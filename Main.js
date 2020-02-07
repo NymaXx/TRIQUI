@@ -10,11 +10,11 @@ function setup() {
     createCanvas(500, 500);
     posX = 100;
     posY = 100;
-    for (let i = 0; i < 9; i++) {
-        for (let j = 0; j < 9; j++) {
+    for (let i = 0; i < matrizTriqui.length; i++) {
+        for (let j = 0; j < matrizTriqui.length; j++) {
 
-            fill(0, 0, 0);
-            rect(posX * i, posY * i, (posX * i) + 100, (posY * i) + 100);
+            fill(255, 255, 255);
+            rect(posX * j, posY * i, 100, 100);
 
         }
     }
@@ -25,6 +25,9 @@ function draw() {
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
 
+
+            strokeWight(4);
+            stroke(51);
             matrizTriqui(i).pintar;
 
         }
@@ -35,7 +38,7 @@ function draw() {
 }
 
 function mousePressed() {
-    if (at) {
+    if (XM) {
 
     };
 }
