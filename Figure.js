@@ -18,6 +18,40 @@ class Figure{
     setTamX(tamX){
         this.tamX = tamX;
     }
+
+    getTamY(){
+        return this.tamY;
+    }
+
+    setTamY(tamY){
+        this.tamY = tamY;
+    }
+
+    getPosX(){
+        return this.posX;
+    }
+
+    setPosX(posX){
+        this.posX = posX;
+    }
+
+    getPosY(){
+        return this.posX;
+    }
+
+    setTamY(posY){
+        this.posY = posY;
+    }
+
+    getTurn(){
+        return this.posX;
+    }
+
+    setTamY(turn){
+        this.turn = turn;
+    }
+    
+
     
 
     
