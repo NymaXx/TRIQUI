@@ -1,7 +1,7 @@
 class Figure2 extends Figure{
-    constructor(){
+    constructor(tamX, tamY, posX, posY, turn){
         super(tamX, tamY, posX, posY, turn);
-        this.turn= 1;
+        
     }
  
     
