@@ -11,6 +11,15 @@ class Figure{
         
     }
 
+    getTamx(){
+        return this.tamX;
+    }
+
+    setTamX(tamX){
+        this.tamX = tamX;
+    }
+    
+
     
 
 
