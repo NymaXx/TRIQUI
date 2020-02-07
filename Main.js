@@ -5,6 +5,7 @@ let matrizTriqui = [
     [0, 0, 0]
 ];
 
+
 function setup() {
     createCanvas(500, 500);
     posX = 100;
@@ -28,6 +29,7 @@ function draw() {
 
         }
     }
+
 
 
 }
