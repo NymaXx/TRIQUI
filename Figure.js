@@ -40,9 +40,18 @@ class Figure{
     }
 
     setTamY(posY){
-        this.posY = this.posY;
+        this.posY = posY;
+    }
+
+    getTurn(){
+        return this.posX;
+    }
+
+    setTamY(turn){
+        this.turn = turn;
     }
     
+
     
 
     
