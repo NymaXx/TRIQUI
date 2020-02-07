@@ -1,12 +1,39 @@
+let posX, posY;
+let matrizTriqui = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+];
 
-function setup(){
-    createCanvas(500,500);
+function setup() {
+    createCanvas(500, 500);
+    posX = 100;
+    posY = 100;
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+
+            fill(0, 0, 0);
+            rect(posX * i, posY * i, (posX * i) + 100, (posY * i) + 100);
+
+        }
+    }
 }
 
-function draw(){
-rect(200,100,205,500);
-rect(300,100,305,500);
-rect(100,200,500,205);
-rect(100,300,500,305);
+function draw() {
+
+    for (let i = 0; i < matrizTriqui.length; i++) {
+        for (let j = 0; j < matrizTriqui.length; j++) {
+
+            matrizTriqui(i).pintar;
+
+        }
+    }
+
+
 }
 
+function mousePressed() {
+    if (at) {
+
+    };
+}
