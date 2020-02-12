@@ -26,9 +26,9 @@ function draw() {
         for (let j = 0; j < matrizTriqui.length; j++) {
 
 
-            strokeWight(4);
+            strokeWeight(4);
             stroke(51);
-            matrizTriqui(i).pintar;
+            matrizTriqui[i].length;
 
         }
     }
