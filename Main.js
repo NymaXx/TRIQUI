@@ -28,8 +28,7 @@ function draw() {
 
             strokeWeight(4);
             stroke(51);
-            matrizTriqui[i].length;
-
+            
         }
     }
 
