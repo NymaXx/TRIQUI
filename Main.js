@@ -13,20 +13,26 @@ let player2;
 
 function setup() {
     createCanvas(500, 500);
+ 
     posX = 100;
     posY = 100;
     color = 255;
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
-
+            x = w * i + w/2;
+            y = h * j + h/2;
+            w = width/3;
+            h = height/3;
             fill(color);
             rect(posX * j, posY * i, 100, 100);
-
+            player1 = new Circle(x,y,w,h);
+            player2 = new Rect(w,h,x,y);
         }
     }
 }
 
 function draw() {
+
 
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
@@ -61,7 +67,8 @@ function mousePressed() {
                 matrizTriqui[j][i]=1;
             }
             
-            
+            player1.pintar();
+            player2.pintar();
         }
 }
 

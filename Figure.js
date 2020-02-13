@@ -1,10 +1,10 @@
 class Figure{
-    constructor(tamX, tamY, posX, posY, turn){
+    constructor(tamX, tamY, posX, posY){
         this.tamX= tamX;
         this.tamY= tamY;
         this.posX= posX;
         this.posY= posY;
-        this.turn= turn;
+        
     }
 
     pintar(){
@@ -43,13 +43,6 @@ class Figure{
         this.posY = posY;
     }
 
-    getTurn(){
-        return this.posX;
-    }
-
-    setTamY(turn){
-        this.turn = turn;
-    }
     
 
     

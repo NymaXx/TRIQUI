@@ -1,13 +1,16 @@
 class Circle extends Figure{
-    constructor(tamX, tamY, posX, posY, turn){
-        super(tamX, tamY, posX, posY, turn);
-        
+    constructor(tamX, tamY, posX, posY){
+        super(tamX, tamY, posX, posY);
+        this.tamX = tamX;
+        this.tamY = tamY;
+        this.posX = posX;
+        this.posY = posY;
     }
     
 
  
     pintar(){
-        ellipse(posX,posY, tamX,tamY);
+        ellipse(this.posX,posY,this.tamX,this.tamY);
     }
 
     
