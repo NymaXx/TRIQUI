@@ -1,4 +1,4 @@
-class Figure1 extends Figure{
+class Circle extends Figure{
     constructor(tamX, tamY, posX, posY, turn){
         super(tamX, tamY, posX, posY, turn);
         
@@ -7,7 +7,7 @@ class Figure1 extends Figure{
 
  
     pintar(){
-        ellipse(50,50, 50,50);
+        ellipse(posX,posY, tamX,tamY);
     }
 
     

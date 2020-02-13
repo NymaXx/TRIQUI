@@ -1,4 +1,4 @@
-class Figure2 extends Figure{
+class Rect extends Figure{
     constructor(tamX, tamY, posX, posY, turn){
         super(tamX, tamY, posX, posY, turn);
         
