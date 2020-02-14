@@ -7,8 +7,8 @@ let matrizTriqui = [
     [0, 0, 0],
     [0, 0, 0]
 ];
-let player1;
-let player2;
+let player1 = [];
+let player2 = [];
 let turno;
 let playerr1 = [];
 let playerr2 = [];
@@ -35,8 +35,7 @@ function setup() {
             h = 25;
             fill(color);
             rect(posX * j, posY * i, 100, 100);
-            player1 = new Rect(100,100,j*100,i*100);
-            player2 = new Circle(100,100,j*100,i*100);
+           
         }
     }
 }
@@ -53,14 +52,17 @@ function draw() {
             stroke(51);
 
             if(matrizTriqui[i][j] == 2) {
-                ellipse(j*100, i*100, 100, 100);
+                //ellipse(j*100, i*100, 100, 100);
                 for(let a=0;a<player2.length;a++){
-                    player2(a).pintar();
+                    player2[a].pintar();
                 }
                 //Aquí se recorre el arreglo de circulos
             } else if(matrizTriqui[i][j] == 1) {
-                line(j*100, i*100, (j*100)+100, (i*100)+100);
-                line(j*100, (i*100)+100, (j*100)+100, i*100);
+               // line(j*100, i*100, (j*100)+100, (i*100)+100);
+               // line(j*100, (i*100)+100, (j*100)+100, i*100);
+                for(let a=0;a<player1.length;a++){
+                    player1[a].pintar();
+                }
             }
         }
     }
@@ -226,9 +228,19 @@ function mousePressed() {
                 if(turno) {
                     matrizTriqui[i][j] = 1;
                     //Agregar circulo al arreglo
+                    
+                        player1.push(new Rect(100,100,j*100,i*100));
+                    
+                   
                     turno = false;
                 } else {
                     matrizTriqui[i][j] = 2;
+                    //Agregar equis al arreglo
+                    for(let a=0;a<player1.length;a++){
+                        player2.push(new Circle(100,100,j*100,i*100));
+                        console.log("fvfv");
+                    }
+                    
                     turno = true;
                 }
                 
