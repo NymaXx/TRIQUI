@@ -24,6 +24,7 @@ function setup() {
     createCanvas(500, 500);
 
     victoria1 = false;
+    victoria2 = false;
 
     turno = true;
     posX = 100;
@@ -66,7 +67,7 @@ function draw() {
             }
         }
     }
-
+    //modelos de victoria
     for (let i = 0; i < matrizTriqui.length; i++) {
         ganarUno = 0;
         for (let j = 0; j < matrizTriqui.length; j++) {
@@ -99,6 +100,42 @@ function draw() {
             if (victoria1 == true) {
                 textSize(30);
                 text("ganador player1", 70, 150);
+            }
+
+        }
+    }
+    for (let i = 0; i < matrizTriqui.length; i++) {
+        ganarDos = 0;
+        for (let j = 0; j < matrizTriqui.length; j++) {
+
+            //condicion de victoria horizontal player2
+            if (matrizTriqui[i][j] == 2) {
+                ganarDos++;
+            }
+            if (ganarDos == 3) {
+                victoria2 = true; 0;
+            }
+            if (victoria2 == true) {
+                textSize(30);
+                text("ganador player2", 70, 150);
+            }
+
+        }
+    }
+    for (let j = 0; j < matrizTriqui.length; j++) {
+        ganarDos = 0;
+        for (let i = 0; i < matrizTriqui.length; i++) {
+
+            //condicion de victoria vertical player2
+            if (matrizTriqui[i][j] == 2) {
+                ganarDos++;
+            }
+            if (ganarDos == 3) {
+                victoria2 = true; 0;
+            }
+            if (victoria2 == true) {
+                textSize(30);
+                text("ganador player2", 70, 150);
             }
 
         }
