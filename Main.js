@@ -10,7 +10,8 @@ let matrizTriqui = [
 let player1;
 let player2;
 let turno;
-let circulos = [];
+let player1 = [];
+let player2 = [];
 
 
 function setup() {
@@ -28,9 +29,10 @@ function setup() {
             y = h * j + h/2;
             w = 25;
             h = 25;
-            circulos = new Circle();
             fill(color);
             rect(posX * j, posY * i, 100, 100);
+            player1 = new Rect(100,100,j*100,i*100);
+            player2 = new Circle(100,100,j*100,i*100);
         }
     }
 }
