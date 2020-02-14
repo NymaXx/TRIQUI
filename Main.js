@@ -40,10 +40,7 @@ function draw() {
     
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
-            x = w * i + w/2;
-            y = h * j + h/2;
-            w = width/3;
-            h = height/3;
+           
             fill(color);
             rect(posX * j, posY * i, 100, 100);
             strokeWeight(4);
