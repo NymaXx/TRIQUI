@@ -71,6 +71,7 @@ function draw() {
 
 //condicionales de todas las posibilidades de ganar para player1
     for (let i = 0; i < matrizTriqui.length; i++) {
+
         for (let j = 0; j < matrizTriqui.length; j++) {
              if ( matrizTriqui [0] [0] == 1 && matrizTriqui [0] [1] == 1 && matrizTriqui [0][2]==1){
                 victoria1 = true
@@ -317,9 +318,9 @@ function draw() {
 
             for (let i = 0; i < matrizTriqui.length; i++) {
                      for (let j = 0; j < matrizTriqui.length; j++) {   
-                    if(victoria1==false && victoria2==false){
+                    if(victoria1==false && victoria2==false && matrizTriqui[i][j]!=0){
                         textSize(30);
-                     text("eempate",70,150);
+                     text("empate",70,150);
                     }
                     }
                     }              
