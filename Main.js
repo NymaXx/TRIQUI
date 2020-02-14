@@ -10,8 +10,12 @@ let matrizTriqui = [
 let player1;
 let player2;
 let turno;
-let player1 = [];
-let player2 = [];
+let playerr1 = [];
+let playerr2 = [];
+let ganarUno;
+let ganarDos;
+let victoria= false;
+
 
 
 function setup() {
@@ -61,8 +65,156 @@ function draw() {
         }
     }
 
-    
-    
+
+//condicionales de todas las posibilidades de ganar para player1
+    for (let i = 0; i < matrizTriqui.length; i++) {
+        for (let j = 0; j < matrizTriqui.length; j++) {
+             if ( matrizTriqui [0] [0] == 1 && matrizTriqui [0] [1] == 1 && matrizTriqui [0][2]==1){
+                victoria = true
+                }
+                if(victoria == true){
+                    textSize(30);
+                    text("ganador player1",70,150);
+                }
+            }
+        }   
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [1] [0] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [1][2]==1){
+                    victoria = true
+                    }
+                    if(victoria == true){
+                        textSize(30);
+                        text("ganador player1",70,150);
+                    }
+                }
+            }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [2] [0] == 1 && matrizTriqui [2] [1] == 1 && matrizTriqui [2][2]==1){
+                    victoria = true
+                     }
+                 if(victoria == true){
+                    textSize(30);
+                    text("ganador player1",70,150);
+                        }
+                    }
+                }
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [0] [0] == 1 && matrizTriqui [1] [0] == 1 && matrizTriqui [2][0]==1){
+                    victoria = true
+                        }
+                    if(victoria == true){
+                     textSize(30);
+                     text("ganador player1",70,150);
+                         }
+                     }
+               }
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [0] [1] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [2][1]==1){
+                        victoria = true
+                            }
+                    if(victoria == true){
+                     textSize(30);
+                     text("ganador player1",70,150);
+                             }
+                         }
+                   }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+             for (let j = 0; j < matrizTriqui.length; j++) {
+                    if ( matrizTriqui [0] [2] == 1 && matrizTriqui [1] [2] == 1 && matrizTriqui [2][2]==1){
+                         victoria = true
+                               }
+                    if(victoria == true){
+                    textSize(30);
+                     text("ganador player1",70,150);
+                                     }
+                                 }
+                           }
+    //condicionales para ganador player 2
+
+    for (let i = 0; i < matrizTriqui.length; i++) {
+        for (let j = 0; j < matrizTriqui.length; j++) {
+             if ( matrizTriqui [0] [0] == 2 && matrizTriqui [0] [1] == 2 && matrizTriqui [0][2]==2){
+                victoria = true
+                }
+                if(victoria == true){
+                    textSize(30);
+                    text("ganador player2",70,150);
+                }
+            }
+        }   
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [1] [0] == 2 && matrizTriqui [1] [1] == 2 && matrizTriqui [1][2]==2){
+                    victoria = true
+                    }
+                    if(victoria == true){
+                        textSize(30);
+                        text("ganador player2",70,150);
+                    }
+                }
+            }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [2] [0] == 2 && matrizTriqui [2] [1] == 2 && matrizTriqui [2][2]==2){
+                    victoria = true
+                     }
+                 if(victoria == true){
+                    textSize(30);
+                    text("ganador player2",70,150);
+                        }
+                    }
+                }
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [0] [0] == 2 && matrizTriqui [1] [0] == 2 && matrizTriqui [2][0]==2){
+                    victoria = true
+                        }
+                    if(victoria == true){
+                     textSize(30);
+                     text("ganador player2",70,150);
+                         }
+                     }
+               }
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [0] [1] == 2 && matrizTriqui [1] [1] == 2 && matrizTriqui [2][1]==2){
+                        victoria = true
+                            }
+                    if(victoria == true){
+                     textSize(30);
+                     text("ganador player2",70,150);
+                             }
+                         }
+                   }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+             for (let j = 0; j < matrizTriqui.length; j++) {
+                    if ( matrizTriqui [0] [2] == 2 && matrizTriqui [1] [2] == 2 && matrizTriqui [2][2]==2){
+                         victoria = true
+                               }
+                    if(victoria == true){
+                    textSize(30);
+                     text("ganador player2",70,150);
+                                     }
+                                 }
+                           }
 }
 
 function mousePressed() {
