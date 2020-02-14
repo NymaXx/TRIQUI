@@ -10,7 +10,7 @@ class Circle extends Figure{
 
  
     pintar(){
-        ellipse(this.posX,posY,this.tamX,this.tamY);
+        ellipse(posX*100, posY*100, 100, 100);
     }
 
     

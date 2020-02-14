@@ -7,10 +7,6 @@ class Figure{
         
     }
 
-    pintar(){
-        
-    }
-
     getTamx(){
         return this.tamX;
     }
