@@ -11,7 +11,7 @@ class Rect extends Figure{
 
     pintar(){
         fill(255); 
-        line(this.posX-this.tamX/2,this.posY-this.tamX/2,this.posX+this.tamX/2,this.posX+this.tamY/2);
-        line(this.posX+this.tamX/2,this.posY-this.tamX/2,this.posX-this.tamX/2,this.posY+this.tamY/2);
+        line(this.posX,this.posY,this.posX+this.tamX,this.posY+this.tamY);
+        line(this.posX,this.posY+this.tamX,this.posX+this.tamX,this.posY);
     }
 }
