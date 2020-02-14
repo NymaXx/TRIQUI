@@ -50,6 +50,9 @@ function draw() {
 
             if(matrizTriqui[i][j] == 2) {
                 ellipse(j*100, i*100, 100, 100);
+                for(let a=0;a<player2.length;a++){
+                    player2(a).pintar();
+                }
                 //Aquí se recorre el arreglo de circulos
             } else if(matrizTriqui[i][j] == 1) {
                 line(j*100, i*100, (j*100)+100, (i*100)+100);
