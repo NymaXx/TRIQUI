@@ -14,7 +14,8 @@ let playerr1 = [];
 let playerr2 = [];
 let ganarUno;
 let ganarDos;
-let victoria= false;
+let victoria1;
+let victoria2;
 
 
 
@@ -67,11 +68,12 @@ function draw() {
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
              if ( matrizTriqui [0] [0] == 1 && matrizTriqui [0] [1] == 1 && matrizTriqui [0][2]==1){
-                victoria = true
+                victoria1 = true
                 }
-                if(victoria == true){
+                if(victoria1 == true){
                     textSize(30);
                     text("ganador player1",70,150);
+                    victoria2 =false;
                 }
             }
         }   
@@ -79,11 +81,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                  if ( matrizTriqui [1] [0] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [1][2]==1){
-                    victoria = true
+                    victoria1 = true
                     }
-                    if(victoria == true){
+                    if(victoria1 == true){
                         textSize(30);
                         text("ganador player1",70,150);
+                        victoria2 =false;
                     }
                 }
             }
@@ -92,11 +95,54 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                 if ( matrizTriqui [2] [0] == 1 && matrizTriqui [2] [1] == 1 && matrizTriqui [2][2]==1){
-                    victoria = true
+                    victoria1 = true
                      }
-                 if(victoria == true){
+                 if(victoria1 == true){
                     textSize(30);
                     text("ganador player1",70,150);
+                    victoria2 =false;
+                
+                }
+            }
+        }
+
+
+                    for (let i = 0; i < matrizTriqui.length; i++) {
+        for (let j = 0; j < matrizTriqui.length; j++) {
+             if ( matrizTriqui [0] [0] == 1 && matrizTriqui [0] [1] == 1 && matrizTriqui [0][2]==1){
+                victoria1 = true
+                }
+                if(victoria1 == true){
+                    textSize(30);
+                    text("ganador player1",70,150);
+                    victoria2 =false;
+                }
+            }
+        }   
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [1] [0] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [1][2]==1){
+                    victoria1 = true
+                    }
+                    if(victoria1 == true){
+                        textSize(30);
+                        text("ganador player1",70,150);
+                        victoria2 =false;
+                    }
+                }
+            }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [2] [0] == 1 && matrizTriqui [2] [1] == 1 && matrizTriqui [2][2]==1){
+                    victoria1 = true
+                     }
+                 if(victoria1 == true){
+                    textSize(30);
+                    text("ganador player1",70,150);
+                    victoria2 =false;
                         }
                     }
                 }
@@ -104,11 +150,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                 if ( matrizTriqui [0] [0] == 1 && matrizTriqui [1] [0] == 1 && matrizTriqui [2][0]==1){
-                    victoria = true
+                    victoria1 = true
                         }
-                    if(victoria == true){
+                    if(victoria1 == true){
                      textSize(30);
                      text("ganador player1",70,150);
+                     victoria2 =false;
                          }
                      }
                }
@@ -116,11 +163,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                  if ( matrizTriqui [0] [1] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [2][1]==1){
-                        victoria = true
+                        victoria1 = true
                             }
-                    if(victoria == true){
+                    if(victoria1 == true){
                      textSize(30);
                      text("ganador player1",70,150);
+                     victoria2 =false;
                              }
                          }
                    }
@@ -129,11 +177,54 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
              for (let j = 0; j < matrizTriqui.length; j++) {
                     if ( matrizTriqui [0] [2] == 1 && matrizTriqui [1] [2] == 1 && matrizTriqui [2][2]==1){
-                         victoria = true
+                         victoria1 = true
                                }
-                    if(victoria == true){
+                    if(victoria1 == true){
                     textSize(30);
                      text("ganador player1",70,150);
+                     victoria2 =false;
+                                     }
+                                 }
+                           }
+                        
+                    
+                
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                if ( matrizTriqui [0] [0] == 1 && matrizTriqui [1] [0] == 1 && matrizTriqui [2][0]==1){
+                    victoria1 = true
+                        }
+                    if(victoria1 == true){
+                     textSize(30);
+                     victoria2 =false;
+                         }
+                     }
+               }
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+            for (let j = 0; j < matrizTriqui.length; j++) {
+                 if ( matrizTriqui [0] [1] == 1 && matrizTriqui [1] [1] == 1 && matrizTriqui [2][1]==1){
+                        victoria1 = true
+                            }
+                    if(victoria1 == true){
+                     textSize(30);
+                     text("ganador player1",70,150);
+                     victoria2 =false;
+                             }
+                         }
+                   }
+
+
+        for (let i = 0; i < matrizTriqui.length; i++) {
+             for (let j = 0; j < matrizTriqui.length; j++) {
+                    if ( matrizTriqui [0] [2] == 1 && matrizTriqui [1] [2] == 1 && matrizTriqui [2][2]==1){
+                         victoria1 = true
+                               }
+                    if(victoria1 == true){
+                    textSize(30);
+                     text("ganador player1",70,150);
+                     victoria2 =false;
                                      }
                                  }
                            }
@@ -142,11 +233,12 @@ function draw() {
     for (let i = 0; i < matrizTriqui.length; i++) {
         for (let j = 0; j < matrizTriqui.length; j++) {
              if ( matrizTriqui [0] [0] == 2 && matrizTriqui [0] [1] == 2 && matrizTriqui [0][2]==2){
-                victoria = true
+                victoria2 = true
                 }
-                if(victoria == true){
+                if(victoria2 == true){
                     textSize(30);
                     text("ganador player2",70,150);
+                    victoria1 =false;
                 }
             }
         }   
@@ -154,11 +246,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                  if ( matrizTriqui [1] [0] == 2 && matrizTriqui [1] [1] == 2 && matrizTriqui [1][2]==2){
-                    victoria = true
+                    victoria2 = true
                     }
-                    if(victoria == true){
+                    if(victoria2 == true){
                         textSize(30);
                         text("ganador player2",70,150);
+                        victoria1 =false;
                     }
                 }
             }
@@ -167,11 +260,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                 if ( matrizTriqui [2] [0] == 2 && matrizTriqui [2] [1] == 2 && matrizTriqui [2][2]==2){
-                    victoria = true
+                    victoria2 = true
                      }
-                 if(victoria == true){
+                 if(victoria2 == true){
                     textSize(30);
                     text("ganador player2",70,150);
+                    victoria1 =false;
                         }
                     }
                 }
@@ -179,11 +273,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                 if ( matrizTriqui [0] [0] == 2 && matrizTriqui [1] [0] == 2 && matrizTriqui [2][0]==2){
-                    victoria = true
+                    victoria2 = true
                         }
-                    if(victoria == true){
+                    if(victoria2 == true){
                      textSize(30);
                      text("ganador player2",70,150);
+                     victoria1 =false;
                          }
                      }
                }
@@ -191,11 +286,12 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
             for (let j = 0; j < matrizTriqui.length; j++) {
                  if ( matrizTriqui [0] [1] == 2 && matrizTriqui [1] [1] == 2 && matrizTriqui [2][1]==2){
-                        victoria = true
+                        victoria2 = true
                             }
-                    if(victoria == true){
+                    if(victoria2 == true){
                      textSize(30);
                      text("ganador player2",70,150);
+                     victoria1 =false;
                              }
                          }
                    }
@@ -204,14 +300,24 @@ function draw() {
         for (let i = 0; i < matrizTriqui.length; i++) {
              for (let j = 0; j < matrizTriqui.length; j++) {
                     if ( matrizTriqui [0] [2] == 2 && matrizTriqui [1] [2] == 2 && matrizTriqui [2][2]==2){
-                         victoria = true
+                         victoria2 = true
                                }
-                    if(victoria == true){
+                    if(victoria2 == true){
                     textSize(30);
                      text("ganador player2",70,150);
+                     victoria1 =false;
                                      }
                                  }
                            }
+
+            for (let i = 0; i < matrizTriqui.length; i++) {
+                     for (let j = 0; j < matrizTriqui.length; j++) {   
+                    if(victoria1==false && victoria2==false){
+                        textSize(30);
+                     text("eempate",70,150);
+                    }
+                    }
+                    }              
 }
 
 function mousePressed() {
